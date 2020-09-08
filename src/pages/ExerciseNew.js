@@ -1,8 +1,17 @@
 import React from 'react'
 
 class ExerciseNew extends React.Component {
+
+    handleCick = () => {
+        console.log('Clicked')
+    }
+
     render(){
-        return 'ExerciseNew'
+        return (
+            <button onClick={this.handleCick}>
+                Send
+            </button>
+        )
     }
 }
 
